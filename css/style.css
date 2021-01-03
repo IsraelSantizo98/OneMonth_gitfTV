@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+html {
+    /* Reset para rems 62.5% = 10px */
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+h1{
+    font-weight: 500;
+    font-size: 3rem;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.container{
+    border: 1px solid black;
+    max-width: 120rem;
+    height: 100vh;
+    margin: 0 auto;
+}
