@@ -4,25 +4,9 @@ document.querySelector('.js-go').addEventListener('click', function(){
     var userInput = getUserInput();
     alert(userInput);
     searchGiphy(userInput);
-
 });
-function busqueda(){
-    switch(userInput){
-        case '1':
-            console.log('Escogio 1');
-            alert('Escogio 1');
-            break;
-        case '2':
-            console.log('Escogio 2');
-            break;
-    }
-}
 //Reconcer el click del teclado
 document.querySelector('.js-userinput').addEventListener('keyup', function(e){
-    //The e in the function es the data for de event console.log(e);
-    //var input = document.querySelector('input').value;
-    //The number 13 is the code for enter in the keyboard
-    //The keycode in js not compatible for all browsers
     if(e.which === 13){
         var userInput = getUserInput();
         searchGiphy(userInput);
@@ -32,15 +16,6 @@ document.querySelector('.js-userinput').addEventListener('keyup', function(e){
 });
 function getUserInput() {
     var inputValue = document.querySelector('.js-userinput').value;
-    switch(inputValue){
-        case '1':
-            console.log('Escogio 1');
-            alert('Escogio 1');
-            break;
-        case '2':
-            console.log('Escogio 2');
-            break;
-    }
 	return inputValue;
 }
 //Credenciales para ingresar al API
@@ -75,5 +50,4 @@ function pushToDOM(input){
                 i++;
         }, 3000*i);
     }
-    //container.innerHTML += "<img src=\"" + imageUrl + "\" class=\"container-image\">";
 }
