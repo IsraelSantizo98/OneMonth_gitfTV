@@ -13,6 +13,9 @@ h1{
     font-weight: 500;
     font-size: 3rem;
 }
+.margin{
+    margin-top: 2rem;
+}
 body{
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -22,4 +25,11 @@ body{
     max-width: 120rem;
     height: 100vh;
     margin: 0 auto;
+}
+.giftScreen{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
