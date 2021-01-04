@@ -16,6 +16,15 @@ document.querySelector('.js-userinput').addEventListener('keyup', function(e){
 });
 function getUserInput() {
     var inputValue = document.querySelector('.js-userinput').value;
+    switch(inputValue){
+        case '1':
+            console.log('Escogio 1');
+            alert('Escogio 1');
+            break;
+        case '2':
+            console.log('Escogio 2');
+            break;
+    }
 	return inputValue;
 }
 //Credenciales para ingresar al API
